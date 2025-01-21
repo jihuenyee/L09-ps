@@ -9,7 +9,7 @@ function CourseDetails() {
   useEffect(() => {
     // Simulated fetch for courses by diploma ID
     axios
-      .get(`/api/diplomas/${diplomaId}/courses`) // Replace with actual API endpoint
+      .get(`/api/diplomas/${diplomaId}/courses`)
       .then((res) => setCourses(res.data))
       .catch((err) => console.error(err));
   }, [diplomaId]);
